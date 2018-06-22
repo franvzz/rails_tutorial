@@ -1,0 +1,13 @@
+<h1>Images</h1>
+
+<h4>Option 1</h4>
+<ul>
+  <%- @images.each do |image| %>
+  <li><%= image.description %></li>
+  <% end %>
+</ul>
+
+<h4>Option 2 (with partial: images/_image)</h4>
+<ul>
+  <%= render @images %>
+</ul>
